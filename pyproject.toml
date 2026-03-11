@@ -1,0 +1,23 @@
+[project]
+name = "ai-agent-system"
+version = "0.1.0"
+description = "AI agent with LangGraph and ReAct loop"
+authors = [{name="Shravani"}]
+requires-python = ">=3.10"
+
+dependencies = [
+    "langchain>=0.2.0",
+    "langgraph>=0.1.0",
+    "openai",
+    "anthropic",
+    "python-dotenv",
+    "pydantic",
+    "fastapi",
+    "uvicorn",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
